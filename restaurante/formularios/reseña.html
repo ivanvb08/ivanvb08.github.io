@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Iván Vida Bravo">
+  <meta name="description" content="Formulario para escribir una reseña de un plato del restaurante">
+  <meta name="keywords" content="reseña, plato, formulario, restaurante, opinión">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <title>Reseña de un plato</title>
+</head>
+<body>
+  <header>
+    <h1>Reseña de un plato</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Volver al menú del restaurante</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <form action="#" method="post">
+      <p>
+        <label for="plato">Plato:</label><br>
+        <select id="plato" name="plato" required>
+          <option value="">-- Elige un plato --</option>
+          <option value="carbonara">Macarrones a la carbonara</option>
+          <option value="paella-valenciana">Paella valenciana</option>
+          <option value="tartar-atun">Tartar de atún</option>
+        </select>
+      </p>
+      <p>
+        <label for="nombre">Su nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required>
+      </p>
+      <p>
+        <label for="resena">Su reseña:</label><br>
+        <textarea id="resena" name="resena" rows="6" cols="50" required></textarea>
+      </p>
+      <p>
+        <button type="submit">Enviar reseña</button>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Iván Vida Bravo</p>
+  </footer>
+</body>
+</html>
