@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Tu nombre">
+  <meta name="description" content="Hoja de inscripción en los ciclos formativos de grado superior">
+  <meta name="keywords" content="inscripción, ciclos formativos, grado superior, formulario">
+  <title>Hoja de inscripción</title>
+</head>
+<body>
+  <header>
+    <h1>Hoja de inscripción</h1>
+    <h2>En los ciclos formativos de grado superior</h2>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Volver a Formularios</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <form action="#" method="get">
+
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <p>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" id="apellidos" name="apellidos" required>
+          <label for="dni">DNI:</label>
+          <input type="text" id="dni" name="dni" required>
+        </p>
+        <p>
+          <label for="localidad">Localidad de Nacimiento:</label>
+          <input type="text" id="localidad" name="localidad">
+          <label for="provincia">Provincia:</label>
+          <select id="provincia" name="provincia">
+            <option value="almeria">Almería</option>
+            <option value="cadiz">Cádiz</option>
+            <option value="cordoba">Córdoba</option>
+            <option value="granada">Granada</option>
+            <option value="huelva" selected>Huelva</option>
+            <option value="jaen">Jaén</option>
+            <option value="malaga">Málaga</option>
+            <option value="sevilla">Sevilla</option>
+          </select>
+          <label for="nacimiento">Fecha de Nacimiento:</label>
+          <input type="date" id="nacimiento" name="nacimiento">
+        </p>
+        <p>
+          <label for="direccion">Dirección:</label>
+          <input type="text" id="direccion" name="direccion" size="40">
+          <label for="cp">Código Postal:</label>
+          <input type="text" id="cp" name="cp" size="6">
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Forma de Acceso</legend>
+        <p>
+          <input type="radio" id="directo" name="acceso" value="directo">
+          <label for="directo">Directo</label>
+        </p>
+        <p>
+          <input type="radio" id="bachillerato" name="directo" value="bachillerato">
+          <label for="bachillerato">Bachillerato LOGSE Modalidad</label>
+          <input type="text" name="modalidad">
+        </p>
+        <p>
+          <input type="radio" id="experimental" name="directo" value="experimental">
+          <label for="experimental">Experimental</label>
+        </p>
+        <p>
+          <input type="radio" id="cou" name="directo" value="cou">
+          <label for="cou">COU Opción</label>
+          <input type="text" name="opcion">
+        </p>
+        <p>
+          <input type="radio" id="fp2" name="directo" value="fp2">
+          <label for="fp2">FP2</label>
+        </p>
+        <p>
+          <input type="radio" id="otros-acceso" name="directo" value="otros">
+          <label for="otros-acceso">Otros (especifique)</label>
+          <input type="text" name="otros_acceso">
+        </p>
+        <p>
+          <input type="radio" id="libre" name="acceso" value="prueba-libre">
+          <label for="libre">Prueba Libre</label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Documentos Adjuntos</legend>
+        <p>
+          <input type="checkbox" id="doc-dni" name="documentos" value="dni">
+          <label for="doc-dni">Fotocopia DNI</label>
+          <input type="checkbox" id="doc-cert" name="documentos" value="certificado">
+          <label for="doc-cert">Certificado Académico</label>
+        </p>
+        <p>
+          <input type="checkbox" id="doc-otros" name="documentos" value="otros">
+          <label for="doc-otros">Otros documentos (especifique)</label>
+          <input type="text" name="otros_documentos">
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Enviar Solicitud</button>
+        <button type="reset">Limpiar datos</button>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Iván Vida Bravo</p>
+  </footer>
+</body>
+</html>
